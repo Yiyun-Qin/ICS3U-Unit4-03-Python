@@ -1,7 +1,8 @@
 GET square_string
 TRY
     square_number = int(square_string)
-    FOR (int loop_counter = 0; answer = pow(loop_counter, 2); loop_counter++)
+    FOR (int loop_counter = 0; loop_counter <= square_number; loop_counter++)
+        answer = pow(loop_counter, 2)
         SHOW "loop_counter^2 = answer"
     END
 EXCEPT Exception
